@@ -1,0 +1,150 @@
+body {
+    background-color: #f2f5fa;
+}
+
+.page-container {
+    padding: 0 4rem;
+}
+
+nav.navbar {
+    box-shadow: 9px 6px 24px -2px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 1);
+    margin-bottom: 50px;
+    height: 91px;
+}
+
+input, button {
+    background-color: white !important;
+    color: black !important;
+}
+
+.drop-wrapper {
+        height: 3.1rem;
+        width: 100%;
+    }
+
+.card-title-row {
+    line-height: 0.6rem;
+}
+
+.slogan {
+    font-feature-settings: 'clig' off, 'liga' off;
+    line-height: 1.5625rem; /* 156.25% */
+    font-style: normal;
+    font-weight: 400;
+    color: #51C5FF;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+i {
+    margin-right: 0.5rem;
+}
+
+.card-subtitle {
+    color: #909090;
+    line-height: 1rem;
+}
+
+.card-text {
+    display: inline-flex;
+    width: 100%;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.search-row {
+    justify-content: space-between;
+    margin: 2rem 0 5rem 0;
+    flex-flow: row wrap;
+    display: flex; 
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    margin-bottom: 1rem;
+    height: 3.1rem;
+    border: none;
+}
+ 
+.has-search .form-control-feedback {
+    pointer-events: none;
+    line-height: 3.1rem;
+    text-align: center;
+    position: absolute;
+    height: 2.375rem;
+    width: 2.375rem;
+    display: block;
+    z-index: 2;
+}
+
+
+
+@media (min-width: 600px ) {
+    .mobile-card {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .page-container {
+        padding: 0 1rem;
+    }
+
+    .search-row {
+        flex-flow: column wrap;
+        margin: 2rem 0 5rem 0;
+        align-items: flex-end;
+        display: flex;
+    }
+
+    .card {
+        display: none;
+    }
+
+    .image-container {
+        border-radius: 50%;
+        overflow: hidden;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .card-top {
+        border-bottom: 1px solid #E8E8E8;
+        justify-content: space-between;
+        /* padding-bottom: 1rem; */
+        align-items: center;
+        display: flex;
+        margin: 1rem;
+    }
+
+    .card-body {
+        padding-top: 0;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .slogan {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        width: 11rem;
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+    }
+
+    .has-search .form-control {
+        width: 92vw;
+    }
+  }
